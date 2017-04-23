@@ -14,6 +14,18 @@ $c-light-grey: #B3a992;
 
 @import 'box-sizing';
 
+
+// font-family: 'Arvo', serif;
+// font-family: 'Bevan', cursive;
+// font-family: 'Stint Ultra Condensed', cursive;
+// font-family: 'Six Caps', sans-serif;
+// font-family: 'BioRhyme', serif;
+// font-family: 'Ultra', serif;
+// font-family: 'Assistant', sans-serif;
+// font-family: 'Tangerine', cursive;
+// font-family: 'Rouge Script', cursive;
+// font-family: 'Quintessential', cursive;
+
 body {
   color: $c-dark-blue;
   background-color: $c-pale-straw;
@@ -21,13 +33,128 @@ body {
 
 .wrapper {
   display: flex;
+
 }
 
-.end {
-  position: relative;
-  transform: rotate(90deg);
+.text-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+  width: 60%;
+
+}
+
+.top-middle-bottom {
+  border-top: 0.25rem solid $c-dark-blue;
+  border-bottom:  0.25rem solid $c-dark-blue;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  height: 33%;
+}
+
+
+.one-and-two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.area-1 {
+  font-family: 'Assistant', sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+
+  .front {
+
+  }
+
+  .end {
+    position: relative;
+    transform: rotate(90deg);
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .developer {
+
+  }
 }
 
 .area-2 {
-  border: 0.25rem 0 $c-dark-blue solid;
+  margin-top: 1rem;
+  border-top: 0.25rem 0 $c-dark-blue solid;
+}
+
+.border {
+  height: 100;
+  width: .25rem;
+  background-color: $c-straw;
+  border: .25rem $c-dark-blue solid;
+  margin-top: .5rem;
+  margin-right: 1rem;
+}
+
+.area-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  font-family: 'Arvo', serif;
+  font-size: 3rem;
+  margin-top: .5rem;
+
+
+  span {
+    font-family: 'Quintessential', cursive;
+    transform: rotate(-10deg);
+    font-size: 1.5rem;
+  }
+
+  .stars {
+    background-color: $c-dark-blue;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem 0;
+    margin-top: 1rem;
+
+
+    i {
+      color: $c-straw;
+      font-size: 1rem;
+    }
+  }
+}
+
+.area-4 {
+  display: flex;
+  justify-content: center;
+  font-family: 'BioRhyme', serif;
+  font-weight: bold;
+  font-size: 5rem;
+
+
+}
+
+.area-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    font-family: 'Six Caps', sans-serif;
+    color: $c-dark-blue;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+
+
 }
