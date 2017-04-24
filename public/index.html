@@ -5,29 +5,33 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="/app.css">
   <script src="https://use.fontawesome.com/9ab30bcdbf.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Arvo|Assistant|Bevan|BioRhyme|Quintessential|Rouge+Script|Six+Caps|Stint+Ultra+Condensed|Tangerine:700|Ultra" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oswald:700|Raleway:800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Assistant|Bevan|BioRhyme|Rouge+Script|Six+Caps|Stint+Ultra+Condensed|Tangerine:700|Ultra" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
-    <img src="https://s-media-cache-ak0.pinimg.com/originals/c4/1a/da/c41ada34462d3587d8bcf83280e31314.jpg" alt="">
+    <div class="photo">
+      <img class="headshot" src="/img/kateHeadshot.jpg" alt="">
+    </div>
     <div class="text-wrapper">
       <div class="top-middle-bottom">
         <div class="top">
           <div class="one-and-two">
             <div class="area-1">
-              <div class="front">FRONT</div>
-              <div class="end">END</div>
+              <span class="front">FRONT</span>
+              <span class="end">END</span>
               <div class="developer">DEVELOPER</div>
             </div>
             <div class="area-2">
-              <div class="skills">JAVASCRIPT * HTML * CSS</div>
+            <span class="hand">&#9758;</span>
+            JAVASCRIPT  HTML  CSS
             </div>
           </div>
           <div class="border"> </div>
             <div class="area-3">
               AVAILABLE
-              <span class="for">for</span>
+              <span class="for">~ for ~</span>
               HIRE
               <div class="stars">
                 <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
@@ -38,15 +42,22 @@
           <div class="name">KATE LESLIE</div>
         </div>
         <div class="area-5">
-          <a href="/" class="contact">CONTACT</a>
+          <a href="#about" class="about">ABOUT</a>
         <i class="fa fa-star" aria-hidden="true"></i>
-          <a href="/" class="portfolio">PORTFOLIO</a>
+          <a href="#portfolio" class="portfolio">PORTFOLIO</a>
         <i class="fa fa-star" aria-hidden="true"></i>
-          <a href="/" class="about">ABOUT</a>
+          <a href="#contact" class="contact">CONTACT</a>
         </div>
       </div>
     </div>
   </div>
+
+
+
+  <div class="about" id="about"></div>
+  <div class="portfolio" id="portfolio"></div>
+  <div class="contact" id="contact"></div>
+
 
 
   <script src="/app.js" charset="utf-8"></script>

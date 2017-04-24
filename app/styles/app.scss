@@ -24,7 +24,15 @@ $c-light-grey: #B3a992;
 // font-family: 'Assistant', sans-serif;
 // font-family: 'Tangerine', cursive;
 // font-family: 'Rouge Script', cursive;
-// font-family: 'Quintessential', cursive;
+//
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Fjalla One', sans-serif;
+
+
+html, body {
+  height: 100%;
+}
 
 body {
   color: $c-dark-blue;
@@ -33,6 +41,25 @@ body {
 
 .wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.photo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.25rem solid $c-dark-blue;
+
+}
+
+.headshot {
+  max-width: 100%;
+  border-radius: 50%;
+  filter: grayscale(95%);
 
 }
 
@@ -40,8 +67,7 @@ body {
   display: flex;
   align-items: center;
   margin: 0 2rem;
-  width: 60%;
-
+  width: 30%;
 }
 
 .top-middle-bottom {
@@ -71,26 +97,52 @@ body {
   font-family: 'Assistant', sans-serif;
   font-weight: lighter;
   font-size: 2rem;
+  position: relative;
 
   .front {
-
+    font-family: 'Six Caps', sans-serif;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 5.5rem;
+    margin-top: 1rem;
+    letter-spacing: 2px;
   }
 
   .end {
     position: relative;
     transform: rotate(90deg);
-    font-weight: 800;
+    font-family: 'Bevan', cursive;
+    font-size: 2.2rem;
+    font-weight: 600;
     margin: 0;
+    position: absolute;
+    top: 1.1rem;
+    right: -1.6rem;
   }
 
   .developer {
-
+    font-family: 'Six Caps', sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 4rem;
+    margin-bottom: .5rem;
   }
 }
 
 .area-2 {
-  margin-top: 1rem;
-  border-top: 0.25rem 0 $c-dark-blue solid;
+  border-top: 0.2rem $c-dark-blue solid;
+  border-bottom: 0.2rem $c-dark-blue solid;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.4;
+
+  span {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    float: left;
+    margin-right: 0.25rem;
+  }
 }
 
 .border {
@@ -113,7 +165,7 @@ body {
 
 
   span {
-    font-family: 'Quintessential', cursive;
+    font-family: 'Tangerine', cursive;
     transform: rotate(-10deg);
     font-size: 1.5rem;
   }
@@ -137,17 +189,22 @@ body {
 .area-4 {
   display: flex;
   justify-content: center;
-  font-family: 'BioRhyme', serif;
-  font-weight: bold;
-  font-size: 5rem;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 300;
+  font-size: 6.25rem;
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 1;
 
 
 }
 
 .area-5 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  margin-top: 0;
 
   a {
     font-family: 'Six Caps', sans-serif;
