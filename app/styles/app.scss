@@ -22,7 +22,6 @@ $c-light-grey: #B3a992;
 // font-family: 'BioRhyme', serif;
 // font-family: 'Ultra', serif;
 // font-family: 'Assistant', sans-serif;
-// font-family: 'Tangerine', cursive;
 // font-family: 'Rouge Script', cursive;
 //
 // font-family: 'Oswald', sans-serif;
@@ -145,29 +144,32 @@ body {
   }
 }
 
-.border {
-  height: 100;
-  width: .25rem;
-  background-color: $c-straw;
-  border: .25rem $c-dark-blue solid;
-  margin-top: .5rem;
-  margin-right: 1rem;
-}
+// .border {
+//   height: 100;
+//   width: .25rem;
+//   background-color: $c-straw;
+//   border: .25rem $c-dark-blue solid;
+//   margin-top: .5rem;
+//   margin-right: 1rem;
+// }
 
 .area-3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
-  font-family: 'Arvo', serif;
+  font-family: 'Stint Ultra Condensed', cursive;
   font-size: 3rem;
   margin-top: .5rem;
 
 
-  span {
+  .for {
     font-family: 'Tangerine', cursive;
     transform: rotate(-10deg);
     font-size: 1.5rem;
+  }
+  .hire {
+    font-family: 'Stint Ultra Condensed', cursive;
   }
 
   .stars {
