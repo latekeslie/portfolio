@@ -66,7 +66,6 @@ body {
   display: flex;
   align-items: center;
   margin: 0 2rem;
-  width: 32%;
 }
 
 .top-middle-bottom {
@@ -160,8 +159,9 @@ body {
   flex-direction: column;
   align-items: center;
   width: 60%;
-  font-family: 'Stint Ultra Condensed', cursive;
-  font-size: 3rem;
+  font-family: 'BioRhyme', serif;
+  font-size: 2rem;
+  font-weight: 800;
   margin-top: .25rem;
 
 
@@ -169,9 +169,11 @@ body {
     font-family: 'Tangerine', cursive;
     transform: rotate(-10deg);
     font-size: 1.5rem;
+    position: relative;
+    top: -0.5rem;
   }
   .hire {
-    font-family: 'Stint Ultra Condensed', cursive;
+    font-family: 'Bevan', cursive;
   }
 
   .stars {
@@ -224,6 +226,59 @@ body {
       color: $c-mauve;
     }
   }
-
-
 }
+
+.ribbon {
+  font-size: 16px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used rem's to position each elrement for scalability. If you want to use a different font size you may have to play with the position of the ribbon elrements */
+
+  width: 50%;
+
+  position: relative;
+  background: #ba89b6;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2rem; /* Adjust to suit */
+  margin: 0;
+  width: calc(100% - 4rem);
+  border-radius: .5rem .5rem 0 0;
+  }
+  .ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -0.5rem;
+  border: 1.5rem solid #986794;
+  z-index: -1;
+
+  }
+  .ribbon:before {
+  left: -2rem;
+  border-right-width: 1.5rem;
+  border-left-color: transparent;
+  border-radius: 0 0 .5rem 0;
+  }
+  .ribbon:after {
+  right: -2rem;
+  border-left-width: 1.5rem;
+  border-right-color: transparent;
+  border-radius: 0 0 0 .5rem;
+  }
+  .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -0.5rem;
+  }
+  .ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 0.5rem 0 0 1rem;
+  border-radius: 0 0 .5rem 0;
+  }
+  .ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 0.5rem 1rem 0 0;
+  border-radius: 0 0 0 .5rem;
+  }
