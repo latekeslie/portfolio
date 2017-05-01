@@ -1,0 +1,53 @@
+
+.ribbon {
+  font-size: 16px;
+  width: 50%;
+
+  position: relative;
+  background: lighten($c-dark-blue, 10%);
+  color: $c-straw;
+  text-align: center;
+  padding: 1rem 2rem; /* Adjust to suit */
+  margin: 0;
+  width: calc(100% - 4rem);
+  border-radius: .5rem .5rem 0 0;
+  }
+  .ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -0.5rem;
+  border: 1.5rem solid lighten($c-dark-blue, 5%);;
+  z-index: -1;
+
+  }
+  .ribbon:before {
+  left: -2rem;
+  border-right-width: 1.5rem;
+  border-left-color: transparent;
+  border-radius: 0 0 .5rem 0;
+  }
+  .ribbon:after {
+  right: -2rem;
+  border-left-width: 1.5rem;
+  border-right-color: transparent;
+  border-radius: 0 0 0 .5rem;
+  }
+  .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: $c-dark-blue transparent transparent transparent;
+  bottom: -0.5rem;
+  }
+  .ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 0.5rem 0 0 1rem;
+  border-radius: 0 0 .5rem 0;
+  }
+  .ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 0.5rem 1rem 0 0;
+  border-radius: 0 0 0 .5rem;
+  }
