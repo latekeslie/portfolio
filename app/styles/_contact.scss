@@ -1,12 +1,77 @@
 .contact {
   display: flex;
-  margin: 10rem 1rem;
+  margin: 10rem 0;
+  justify-content: center;
 }
 
 .contact-wrapper {
+  width: 70%;
+}
+
+.contact-header {
+  font-size: 3rem;
+  font-family: 'BioRhyme', serif;
+}
+
+.contact-container {
   display: flex;
+  justify-content: space-around;
+}
+
+.bird-container {
+  height: 30rem;
+  width: 30rem;
+  margin-top: 10rem;
+}
+
+.bird {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .icon-container {
   display: flex;
+  flex-direction: column;
+}
+
+.speech-bubble {
+  position: relative;
+  height: 20rem;
+  width: 25rem;
+  background-color: $c-dark-blue;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: $c-straw;
+    font-size: 2rem;
+    max-width: 60%;
+    font-family: 'Fjalla One', sans-serif;
+  }
+}
+
+.speech-bubble::before {
+  content: "";
+    position: absolute;
+    right: 53%;
+    top: 13rem;
+    width: 0;
+    height: 0;
+    border-top: 6rem solid transparent;
+    border-right: 13rem solid $c-dark-blue;
+    border-bottom: 1rem solid transparent;
+    z-index: -1;
+
+}
+
+.linkedin {
+  padding: 2rem;
+  background-color: $c-dark-blue;
+  max-width: 25%;
+  color: $c-pale-straw;
+  display: flex;
+  justify-content: center;
 }
