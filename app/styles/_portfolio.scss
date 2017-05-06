@@ -22,9 +22,19 @@
   border: none;
   font-size: 1rem;
   color: $c-mauve;
+
   &:hover {
     color: darken($c-mauve, 10%);
   }
+
+  img {
+    width: 75%;
+    fill: $c-mauve;
+  }
+}
+
+.si-glyph {
+  fill: tomato;
 }
 
 

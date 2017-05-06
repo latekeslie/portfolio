@@ -57,10 +57,33 @@ body {
 
 }
 
+img {
+  max-width: 100%;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   // border: .75rem double $c-dark-blue;
+}
+
+.email-badge {
+  position: absolute;
+  top: 0rem;
+  left: 3rem;
+  height: 5rem;
+  width: 12rem;
+  background-color: $c-mauve;
+  color: $c-pale-straw;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.2rem;
+  padding: .5rem;
+
+
 }

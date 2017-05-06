@@ -1,17 +1,41 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba($c-stone, .5);
+}
+
+.modal-content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 50vw;
+  position: absolute;
+  background: white;
+  padding: 1rem;
+  overflow: auto;
+  max-height: 80%;
+}
+
+#photos {
+  text-align: center;
+
+  img {
+    width: 70%;
+    margin: 1rem 0;
+  }
 }
 
 .close {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    right: 1rem;
 }
 
 .close:hover,

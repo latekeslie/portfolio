@@ -1,22 +1,30 @@
 import 'whatwg-fetch';
 
 const portfolioItems = [{
-  photo: "https://media1.giphy.com/media/m7BTtLWhjkEJa/200_s.gif",
+  photos: [
+    '/img/heisenberg-login.png', '/img/heisenberg-main.png'
+  ],
   text: "here's the thing"
 }, {
-  photo: "https://www.destructoid.com//ul/428292-grumpycat.jpg",
+  photos: [
+    '/img/puppies1.png', '/img/puppies2.png', '/img/puppies3.png'
+  ],
   text: "here's the thing"
 }, {
-  photo: "https://lh3.googleusercontent.com/U4IsC9Ri4KTmf-eCW-C0G6o06bULQ3zNSgPH8EbWbPBxr-rN_JE0rY3v0f6WSPFw3eU=w300",
+  photos: [
+    '/img/teeshirts1.png', '/img/teeshirts2.png', '/img/teeshirts3.png'
+  ],
   text: "here's the thing"
 }, {
-  photo: "https://rlv.zcache.com/svc/getimage?id=4b90b386-cb5f-4bd6-b68a-a930f7be270e&max_dim=324&square_it=true",
+  photos: [
+    '/img/twitch.png'
+  ],
   text: "here's the thing"
 }, {
-  photo: "https://i0.wp.com/100happybirthdaymemes.com/wp-content/uploads/2016/06/Grumpy-Cat-Memes-01.jpg",
+  photos: ["https://i0.wp.com/100happybirthdaymemes.com/wp-content/uploads/2016/06/Grumpy-Cat-Memes-01.jpg"],
   text: "here's the thing"
 }, {
-  photo: "http://www.catster.com/wp-content/uploads/2015/08/grumpy-cat-meme-051.jpg",
+  photos: ["http://www.catster.com/wp-content/uploads/2015/08/grumpy-cat-meme-051.jpg"],
   text: "here's the thing"
 }];
 
@@ -34,7 +42,14 @@ Array.from(btns).forEach((btn, index) => {
   btn.onclick = function() {
     modal.style.display = "block";
     const data = portfolioItems[index]
-    document.getElementById('photo').src = data.photo
+    const photoContainer = document.getElementById('photos')
+
+    photoContainer.innerHTML = ""
+    data.photos.forEach((photo) => {
+      const img = new Image()
+      img.src = photo
+      photoContainer.append(img)
+    });
     document.getElementById('text').innerHTML = data.text
   }
 

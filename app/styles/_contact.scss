@@ -32,6 +32,10 @@
 .icon-container {
   display: flex;
   flex-direction: column;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .speech-bubble {
@@ -70,6 +74,27 @@
 .linkedin {
   padding: 2rem;
   background-color: $c-dark-blue;
+  max-width: 25%;
+  color: $c-pale-straw;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.github {
+  padding: 2rem;
+  background-color: $c-silver;
+  max-width: 25%;
+  color: $c-pale-straw;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.facebook {
+  padding: 2rem;
+  background-color: $c-mauve;
   max-width: 25%;
   color: $c-pale-straw;
   display: flex;
