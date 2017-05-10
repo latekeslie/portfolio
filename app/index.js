@@ -21,7 +21,9 @@ const portfolioItems = [{
   ],
   text: "here's the thing"
 }, {
-  photos: ["https://i0.wp.com/100happybirthdaymemes.com/wp-content/uploads/2016/06/Grumpy-Cat-Memes-01.jpg"],
+  photos: [
+    '/img/razercars1.png', '/img/razercars2.png', '/img/razercars3.png', '/img/razercars4.png', '/img/razercars5.png',
+  ],
   text: "here's the thing"
 }, {
   photos: ["http://www.catster.com/wp-content/uploads/2015/08/grumpy-cat-meme-051.jpg"],
