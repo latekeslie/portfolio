@@ -11,6 +11,9 @@
 .contact-header {
   font-size: 3rem;
   font-family: 'BioRhyme', serif;
+  display: flex;
+  justify-content: center;
+
 }
 
 .contact-container {
@@ -27,6 +30,7 @@
 .bird {
   max-width: 100%;
   max-height: 100%;
+  filter: grayscale(100%);
 }
 
 .icon-container {
@@ -47,14 +51,15 @@
 
 .speech-bubble {
   position: relative;
-  height: 20rem;
-  width: 25rem;
+  height: 17rem;
+  width: 21rem;
   background-color: $c-dark-blue;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: .75rem solid $c-pale-straw;
+  left: 190%;
+  top: 12rem;
 
   p {
     color: $c-straw;
@@ -68,7 +73,7 @@
   content: "";
     position: absolute;
     right: 53%;
-    top: 11.5rem;
+    top: 10rem;
     width: 0;
     height: 0;
     border-top: 6rem solid transparent;
@@ -80,14 +85,13 @@
 
 .linkedin-container {
   position: absolute;
-  top: -17rem;
-  right: -12%;
+  top: 12rem;
+  right: 25%;
 
 
 }
 
 .linkedin {
-  border: .75rem solid $c-pale-straw;
   height: 17rem;
   width: 21rem;
   background-color: $c-silver;
@@ -99,15 +103,28 @@
   border-radius: 50%;
 }
 
+.linkedin::before {
+  content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -5.5%;
+    top: 11rem;
+    border-left: 13rem solid #9a8978;
+    border-top: 5.9rem solid transparent;
+    border-bottom: 0rem solid transparent;
+    z-index: 0;
+
+}
+
 .github-container {
   position: absolute;
-  top: -11rem;
-  right: 39%;
+  top: 0rem;
+  right: -84%;
 
 }
 
 .github {
-  border: .75rem solid $c-pale-straw;
   height: 17rem;
   width: 21rem;
   background-color: $c-mauve;
@@ -116,6 +133,19 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.github::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5rem solid $c-mauve;
+  border-right: 2rem solid transparent;
+  border-left: 2rem solid transparent;
+  top: 16rem;
+  z-index: 0;
+
 }
 
 // .facebook {

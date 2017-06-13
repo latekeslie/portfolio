@@ -6,19 +6,26 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba($c-stone, .5);
+  background: rgba(#201f1d, .8);
 }
 
 .modal-content {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50vw;
+  width: 70vw;
   position: absolute;
   background: white;
   padding: 1rem;
   overflow: auto;
   max-height: 80%;
+
+  p {
+    margin: 1rem 8rem;
+    padding: 1rem;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: $c-silver;
+  }
 }
 
 #photos {
@@ -26,12 +33,12 @@
 
   img {
     width: 70%;
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
 }
 
 .close {
-    color: #aaa;
+    color: $c-dark-blue;
     font-size: 28px;
     font-weight: bold;
     position: absolute;

@@ -4,27 +4,27 @@ const portfolioItems = [{
   photos: [
     '/img/heisenberg-login.png', '/img/heisenberg-main.png'
   ],
-  text: "here's the thing"
+  text: "The Heisenberg Helper helps a user be more aware of their behavior, by tracking, organizing and displaying data. The user has the option to manually enter time for a specific item within a category, or they can activate a timer that will automatically track and enter time for the item the user has selected. It was built using Ember"
 }, {
   photos: [
     '/img/puppies1.png', '/img/puppies2.png', '/img/puppies3.png'
   ],
-  text: "here's the thing"
+  text: "The Puppy Adoption application allows a user to submit new puppies for adoption, delete adopted puppies, and search through the puppy database. It was built using Vue"
 }, {
   photos: [
     '/img/teeshirts1.png', '/img/teeshirts2.png', '/img/teeshirts3.png'
   ],
-  text: "here's the thing"
+  text: "The teeshirt project demonstrates a responsive site that was built using media queries in CSS."
 }, {
   photos: [
     '/img/twitch.png'
   ],
-  text: "here's the thing"
+  text: "The Twitch project copies the styles on the Twitch website."
 }, {
   photos: [
     '/img/razercars1.png', '/img/razercars2.png', '/img/razercars3.png', '/img/razercars4.png', '/img/razercars5.png',
   ],
-  text: "here's the thing"
+  text: "Razercars was created using Ember. It allows a user to input manufactuers & individual cars within."
 }, {
   photos: ["http://www.catster.com/wp-content/uploads/2015/08/grumpy-cat-meme-051.jpg"],
   text: "here's the thing"

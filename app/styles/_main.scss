@@ -1,11 +1,11 @@
 
 .photo {
-  width: 30%;
+  width: 26%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 0.7rem double $c-dark-blue;
+  // border: 0.7rem double $c-dark-blue;
   position: relative;
   z-index: 2;
 
@@ -15,6 +15,7 @@
   max-width: 100%;
   border-radius: 50%;
   filter: grayscale(95%);
+  // background: linear-gradient(rgba($c-silver, .5), rgba($c-silver, .5) imgurl?);
 
 }
 

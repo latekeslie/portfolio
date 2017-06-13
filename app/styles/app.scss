@@ -84,6 +84,15 @@ img {
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.2rem;
   padding: .5rem;
+}
 
-
+.arrow {
+  font-size: 5rem;
+  position: absolute;
+  right: 5rem;
+  top: 29.5rem;
+  height: 5rem;
+  width: 12rem;
+  color: $c-mauve;
+  font-weight: bold;
 }
