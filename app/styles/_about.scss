@@ -1,6 +1,5 @@
 .about {
   display: flex;
-  margin: 10rem 0;
   justify-content: center;
 
 }
@@ -20,7 +19,7 @@
 
 .about-stars {
   background-color: $c-mauve;
-  color: $c-straw;
+  color: lighten($c-straw, 10%);
   padding: .5rem;
   display: flex;
   justify-content: space-around;
@@ -33,7 +32,8 @@
 
 .about-text {
   margin-top: 2rem;
-  line-height: 1.5rem;
-  font-family: sans-serif;
-  width: 90%;
+  font-family: 'BioRhyme', serif;
+  font-family: 'BioRhyme',serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }

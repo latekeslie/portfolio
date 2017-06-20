@@ -44,17 +44,25 @@ body::after {
   top: 0;
   left: 0;
   content: "";
-  height: 600%;
-  width: 100%;
+  height: 450%;
+  width: 200%;
   mix-blend-mode: screen;
   opacity: 0.2;
   pointer-events: none;
+
+  @media screen and (max-width: 768px) {
+    height: 650%;
+  }
+
+
+
+  // display: none; // REMOVE THIS
 }
 
 body {
   color: $c-dark-blue;
   background-color: $c-pale-straw;
-
+  margin: 0;
 }
 
 img {
@@ -65,8 +73,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  // height: 100%;
   // border: .75rem double $c-dark-blue;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .email-badge {
@@ -76,7 +89,7 @@ img {
   height: 5rem;
   width: 12rem;
   background-color: $c-mauve;
-  color: $c-pale-straw;
+  color: lighten($c-straw, 10%);;
   display: flex;
   // justify-content: center;
   align-items: center;
@@ -84,15 +97,27 @@ img {
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.2rem;
   padding: .5rem;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  @media screen and (max-width: 768px) {
+    position: static;
+  }
 }
 
 .arrow {
-  font-size: 5rem;
   position: absolute;
-  right: 5rem;
-  top: 29.5rem;
+  font-size: 5rem;
+  right: -45%;
+  top: 73%;
+  font-weight: 700;
   height: 5rem;
   width: 12rem;
   color: $c-mauve;
-  font-weight: bold;
+
+  @media screen and (max-width: 768px) {
+    right: -13rem;
+    bottom: 0.6rem;
+    top: auto;
+  }
 }

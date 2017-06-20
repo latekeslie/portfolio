@@ -5,7 +5,7 @@
 
   position: relative;
   background: lighten($c-dark-blue, 10%);
-  color: $c-straw;
+  color: lighten($c-straw, 10%);
   text-align: center;
   padding: 1rem 2rem; /* Adjust to suit */
   margin: 0;
