@@ -7,7 +7,7 @@ options:
   merge-default-rules: true
 # File Options
 files:
-  include: 'app/styles/**/*.scss'
+  include: 'styles/**/*.scss'
 # Rule Configuration
 rules:
   # Class names should follow BEM

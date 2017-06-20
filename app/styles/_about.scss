@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  justify-content: center;
+
+}
+
+.about-container {
+  width: 70%;
+  // padding: .0rem 1rem 1rem 1rem;
+  // border: .15rem solid $c-dark-blue;
+  // box-shadow: .15rem .15rem 1rem .15rem $c-dark-blue;
+}
+
+.about-header {
+  font-family: 'BioRhyme', serif;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.about-stars {
+  background-color: $c-mauve;
+  color: lighten($c-straw, 10%);
+  padding: .5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  margin-top: 2rem;
+  font-family: 'BioRhyme', serif;
+  font-family: 'BioRhyme',serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}

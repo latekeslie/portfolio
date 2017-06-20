@@ -3,4 +3,121 @@
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+
+$c-dark-blue: #273b43;
+$c-mauve: #a6614f;
+$c-straw: #eedfba;
+$c-pale-straw: #f5e6c1;
+$c-stone: #5b605c;
+$c-silver: #9a8978;
+$c-light-grey: #B3a992;
+
 @import 'box-sizing';
+@import 'ribbon';
+@import 'about';
+@import 'portfolio';
+@import 'contact';
+@import 'main';
+@import 'modal';
+
+// font-family: 'Arvo', serif;
+// font-family: 'Bevan', cursive;
+// font-family: 'Stint Ultra Condensed', cursive;
+// font-family: 'Six Caps', sans-serif;
+// font-family: 'BioRhyme', serif;
+// font-family: 'Ultra', serif;
+// font-family: 'Assistant', sans-serif;
+// font-family: 'Rouge Script', cursive;
+//
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Fjalla One', sans-serif;
+
+
+html, body {
+  height: 100%;
+}
+
+body::after {
+  background: url(http://4.bp.blogspot.com/_jFM-Fd8NDFE/TCj2VYtYyII/AAAAAAAAHEA/KeYZHEigOT4/s1600/GrungeTexture-2.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 450%;
+  width: 200%;
+  mix-blend-mode: screen;
+  opacity: 0.2;
+  pointer-events: none;
+
+  @media screen and (max-width: 768px) {
+    height: 650%;
+  }
+
+
+
+  // display: none; // REMOVE THIS
+}
+
+body {
+  color: $c-dark-blue;
+  background-color: $c-pale-straw;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 100%;
+  // border: .75rem double $c-dark-blue;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.email-badge {
+  position: absolute;
+  top: 0rem;
+  left: 3rem;
+  height: 5rem;
+  width: 12rem;
+  background-color: $c-mauve;
+  color: lighten($c-straw, 10%);;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.2rem;
+  padding: .5rem;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  @media screen and (max-width: 768px) {
+    position: static;
+  }
+}
+
+.arrow {
+  position: absolute;
+  font-size: 5rem;
+  right: -45%;
+  top: 73%;
+  font-weight: 700;
+  height: 5rem;
+  width: 12rem;
+  color: $c-mauve;
+
+  @media screen and (max-width: 768px) {
+    right: -13rem;
+    bottom: 0.6rem;
+    top: auto;
+  }
+}

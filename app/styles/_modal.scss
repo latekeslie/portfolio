@@ -1,0 +1,53 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(#201f1d, .8);
+}
+
+.modal-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  position: absolute;
+  background: white;
+  padding: 1rem;
+  overflow: auto;
+  max-height: 80%;
+
+  p {
+    margin: 1rem 8rem;
+    padding: 1rem;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: $c-silver;
+  }
+}
+
+#photos {
+  text-align: center;
+
+  img {
+    width: 70%;
+    margin: 2rem 0;
+  }
+}
+
+.close {
+    color: $c-dark-blue;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 1rem;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
